@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Fontes */
+:root {
+  --font1: "poppins", Arial, Helvetica, sans-serif;
+  --font2: "sekuya", "poppins", Arial, Helvetica, sans-serif;
+}
+
+/* Cores */
+:root {
+  --cor1: aqua;
+  --cor2: rgb(5, 153, 153);
+}
+
+* {
+  font-family: var(--font1);
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: auto;
+  display: flex;
+  height: auto;
+  justify-content: left;
+  gap: 4em;
+  background-color: aqua;
+  justify-content: left;
+  padding: 5px;
+}
+
+header > a {
+  text-decoration: none;
+
+  h1 {
+    margin: 0px;
+    width: max-content;
+    font-family: var(--font2);
+    font-size: 20px;
+    color: black;
+    margin-top: 15px;
+  }
+}
+
+header button {
+  border: 0px solid transparent;
+  display: inline-block;
+  height: 3.4em;
+  width: 6em;
+  margin-left: 1.2em;
+  border-radius: 15px;
+  transition: background-color 0.3 ease;
+  background-color: transparent;
+  margin-top: 2px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--cor2);
+    text-decoration: underline;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+}
+
+#cores1 {
+  margin: 0px;
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(to bottom, aqua, rgb(5, 106, 201));
+}
+
+#cores2 {
+  margin: 0px;
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(to bottom, rgb(5, 106, 201), transparent);
+}
+
+hero {
+  background-color: rgb(5, 106, 201);
+  margin: 0px;
+  display: flex;
+  padding: 15px;
+
+  h1 {
+    font-size: 3em;
+
+    span {
+      font-family: var(--font2);
+      font-size: 30px;
+    }
+  }
+}
+
+hero > img {
+  width: 200px;
+  height: 14em;
+  margin-top: 15px;
+  border-radius: 30px;
+  margin-left: 5em;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+blok {
+  height: 400px;
+  width: 150px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+
+  img {
+    width: 150px;
+    border-radius: 30px;
+    
+  }
+
+  p {
+    display: block;
+  }
+}

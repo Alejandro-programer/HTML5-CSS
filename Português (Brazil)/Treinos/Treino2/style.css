@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font: normal normal 1em 'poppins';
+}
+
+
+main {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, #fdd034, #d52d8b);
+    padding: 2em;
+    border-radius: 3em;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    
+}
+
+
+h1 {
+    font: italic bolder 3em 'poppins';
+    text-align: center;
+    color: #d52d8b;
+}
+
+
+p {
+    text-align: justify;
+}
+
+
+h2 {
+    font: normal bold 2em 'poppins';
+    color: #b42677;
+}
+
+
+button {
+    background-image: linear-gradient(to right, #b42677, #fdd034);
+    border-radius: 1.5em;
+    width: 7.5em;
+    margin: auto;
+    
+}
+
+.pagina2 {
+    font: normal bolder 1em 'poppins';
+    text-align: center;
+}
+
