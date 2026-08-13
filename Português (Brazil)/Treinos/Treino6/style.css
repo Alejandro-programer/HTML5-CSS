@@ -31,6 +31,7 @@ header {
   background-color: aqua;
   justify-content: left;
   padding: 5px;
+
 }
 
 header > a {
@@ -44,6 +45,7 @@ header > a {
     color: black;
     margin-top: 15px;
   }
+
 }
 
 header button {
@@ -102,7 +104,7 @@ hero > img {
   height: 14em;
   margin-top: 15px;
   border-radius: 30px;
-  margin-left: 5em;
+  margin-left: 4em;
   cursor: pointer;
 
   &:hover {
@@ -114,22 +116,14 @@ hero > img {
   }
 }
 
-blok {
-  height: 400px;
-  width: 150px;
-  margin: 0px;
+cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 2px solid black;
+}
 
-  img {
-    width: 150px;
-    border-radius: 30px;
-    
-  }
-
-  p {
-    display: block;
-  }
+cards > button {
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 15px;
 }
