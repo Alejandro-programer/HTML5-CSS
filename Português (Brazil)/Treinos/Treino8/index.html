@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino7</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            height: 95vh;
+        }
+
+
+        div {
+           height: 350px;
+           background: black url(../Treino7/imagens/pattern001.png) center center / cover no-repeat fixed;
+           display: grid;
+        
+           place-content: center;
+           border-radius: 15px;
+           width: 500px;
+
+        }
+
+        div:hover {
+            cursor: pointer;
+        }
+
+        div > #bloco {
+            position: absolute;
+            background: purple;
+            width: 50px;
+            height: 50px;
+
+            left: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="bloco">Ola</div>
+    </div>
+</body>
+</html>
