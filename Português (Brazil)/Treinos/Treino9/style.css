@@ -6,36 +6,54 @@
     src: url('Fontes/Horizon_Regular.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'assinatura';
+    src: url('Fontes/SevenDaySignature-RpKO3.otf') format('opentype');
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Fontes */
 :root {
     --font-padrao: 'poppins';
     --font-titulo: 'horizon';
-    --gap: 20px;
-    --borda: 2px solid black;
+    --font-assinatura: 'assinatura';
 }
 
 /* Cores */
 :root {
-    --cabeçalho_cor: aqua;
-    --botoes_cor_fundo: rgb(40, 75, 75);
+    --botoes_cor_fundo: rgb(2, 3, 3);
+    --corpo-cor-fundo_1: #070708;
+    --corpo-cor-fundo_2: #0B2A1A;
+    --cor-secao: #1c1c1f;
+    
 }
 
 * {
     font-family: var(--font-padrao);
+    color: white;
 }
 
 body {
     margin: 0px;
-    background-image: url('Imagens/v1016-b-09.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, var(--corpo-cor-fundo_1) 60%, var(--corpo-cor-fundo_2));
     height: 100vh;
     
 }
 
 header {
-    background-color: transparent;
+    background-color: linear-gradient(to right, var(--cabeçalho_cor_fundo_2), var(--cabeçalho_cor_fundo_1));
     max-height: 150vh;
     width: auto;
     padding: 20px;
@@ -43,23 +61,33 @@ header {
     display: flex;
     justify-content: space-between;
 
+    a {
+        text-decoration: none;
+    }
+    
     h1 {
         font-family: var(--font-titulo);
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 20px;
         color: white;
+        transition: all 0.5s;
+        cursor: default;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.5s;
+            cursor: pointer;
+        }
     }
 }
 
 header > nav {
     display: flex;
-    
-    gap: var(--gap);
+    gap: 20px;
     margin-right: 20px;
     height: 100%;
     
     a {
-        text-decoration: none;
         color: white;
         font-weight: 600;
         font-size: 20px;
@@ -85,4 +113,48 @@ header > nav {
         
     }
     
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+
+    section {
+        margin: 0px;
+        margin-left: 100px;
+        width: 70vh;
+        height: 50vh;
+        background-color: var(--cor-secao);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        animation: pulse 2s infinite;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: white;
+            cursor: default;
+            
+            
+        span {
+            font-family: var(--font-assinatura);
+            font-size: 50px;
+            color: white;
+            font-weight: normal;
+            cursor: default;
+        }
+        }
+        
+        p {
+            font-size: 20px;
+            color: white;
+            cursor: default;
+            
+        }
+    }
 }
