@@ -3,12 +3,12 @@
 
 @font-face {
     font-family: 'horizon';
-    src: url('Fontes/Horizon_Regular.otf') format('opentype');
+    src: url('../Fontes/Horizon_Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'assinatura';
-    src: url('Fontes/SevenDaySignature-RpKO3.otf') format('opentype');
+    src: url('../Fontes/SevenDaySignature-RpKO3.otf') format('opentype');
 }
 
 @keyframes pulse {
