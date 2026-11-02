@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+        
+        th {
+            background-color: green;
+        }
+
+        .data, .DDD {
+            text-align: center;
+        }
+
+        #resultado {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela com cabeçalho e rodapé</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Nome Completo</th>
+                <th>Data de Nascimento</th>
+                <th>Estado de Nascimento</th>
+                <th>DDD</th>
+                <th>Celular</th>
+                <th>CPF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rayssa</td> <!-- Nome -->
+                <td>Valiate</td> <!-- Sobrenome -->
+                <td>Rayssa Valiate</td> <!-- Nome Completo -->
+                <td class="data">05/01/1990</td> <!-- Data de Nascimento -->
+                <td>Bahia(<strong>BA</strong>)</td> <!-- Estado de Nascimento -->
+                <td class="DDD">71</td> <!-- DDD -->
+                <td>921679744</td> <!-- Celular -->
+                <td>80230367981</td> <!-- CPF -->
+            </tr>
+            <tr>
+                <td>Hygor</td>
+                <td>Matheus</td>
+                <td>Hygor Matheus</td>
+                <td class="data">13/11/1985</td>
+                <td>Goiás(<strong>GO</strong>)</td>
+                <td class="DDD">62</td>
+                <td>954043135</td>
+                <td>18857340905</td>
+            </tr>
+            <tr>
+                <td>Dilson</td>
+                <td>Brandão</td>
+                <td>Dilson Brandão</td>
+                <td class="data">19/08/1989</td>
+                <td>Espírito Santo(<strong>ES</strong>)</td>
+                <td class="DDD">27</td>
+                <td>909825530</td>
+                <td>32474050570</td>
+            </tr>
+            <tr>
+                <td>Alvaro</td>
+                <td>Bretas</td>
+                <td>Alvaro Bretas</td>
+                <td class="data">15/01/1989</td>
+                <td>Amapá(<strong>AP</strong>)</td>
+                <td class="DDD">96</td>
+                <td>946617185</td>
+                <td>73333289822</td>
+            </tr>
+            <tr>
+                <td>Jéssica</td>
+                <td>Campos</td>
+                <td>Jéssica Campos</td>
+                <td class="data">06/09/1992</td>
+                <td>Piauí(<strong>PI</strong>)</td>
+                <td class="DDD">86</td>
+                <td>929775335</td>
+                <td>73952936500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Pessoas</th>
+                <td id="resultado">5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
